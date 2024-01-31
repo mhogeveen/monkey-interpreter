@@ -1,10 +1,18 @@
 # 🐒 Monkey Interpreter
 
-Repo tracking my progress working through the amazing book 'Writing an Interpreter in Go' by Thorsten Ball.
+Repo tracking my progress working through the amazing book [Writing an Interpreter in Go](https://interpreterbook.com/) by Thorsten Ball.
 
-## ⚙️ Getting Started
+## Instructions
 
-- Clone repo
-- `go mod tidy`
-- `go run .`
-- .. repl is ready for use!
+### Start REPL
+
+```bash
+go mod tidy
+go run .
+```
+
+### Run tests
+
+```bash
+go test -v ./...
+```
