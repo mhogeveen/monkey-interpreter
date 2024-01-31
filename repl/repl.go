@@ -4,9 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"io"
-	"monkey/colorize"
-	"monkey/lexer"
-	"monkey/token"
+	"monkey-interpreter/colorize"
+	"monkey-interpreter/lexer"
+	"monkey-interpreter/token"
 )
 
 func Start(in io.Reader, out io.Writer) {
