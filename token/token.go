@@ -27,6 +27,9 @@ const (
 
 	LT = "<"
 	GT = ">"
+	// Would like to support in the future
+	// LT_EQ = "<="
+	// GT_EQ = ">="
 
 	// Delimiters
 	COMMA     = ","
