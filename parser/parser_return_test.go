@@ -1,9 +1,10 @@
 package parser
 
 import (
+	"testing"
+
 	"monkey-interpreter/ast"
 	"monkey-interpreter/lexer"
-	"testing"
 )
 
 func TestReturnStatement(t *testing.T) {

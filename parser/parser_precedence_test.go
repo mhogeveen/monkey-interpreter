@@ -1,8 +1,9 @@
 package parser
 
 import (
-	"monkey-interpreter/lexer"
 	"testing"
+
+	"monkey-interpreter/lexer"
 )
 
 func TestOperatorPrecedenceParsing(t *testing.T) {
@@ -68,7 +69,7 @@ func TestOperatorPrecedenceParsing(t *testing.T) {
 
 		actual := program.String()
 		if actual != tt.expected {
-			t.Errorf("expected=%q, got=%q", tt.expected, actual)
+			t.Errorf("expected=%q, received=%q", tt.expected, actual)
 		}
 	}
 }
