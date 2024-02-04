@@ -6,7 +6,7 @@ import (
 )
 
 const enableTracing = false
-const traceIdentPlaceholder string = "\t"
+const traceIdentPlaceholder = "   "
 
 var traceLevel int = 0
 
