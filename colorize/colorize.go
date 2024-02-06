@@ -27,5 +27,5 @@ var colorCodes = map[string]ColorCode{
 }
 
 func Colorize(s string, c string) string {
-	return fmt.Sprintf("%v%v %v", colorCodes[c], s, NONE)
+	return fmt.Sprintf("%v%v%v", colorCodes[c], s, NONE)
 }
