@@ -1,6 +1,9 @@
 package evaluator
 
-import "monkey-interpreter/object"
+import (
+	"fmt"
+	"monkey-interpreter/object"
+)
 
 var builtins = map[string]*object.Builtin{
 	"len":   newBuiltin(builtinLen),
@@ -8,6 +11,7 @@ var builtins = map[string]*object.Builtin{
 	"last":  newBuiltin(builtinLast),
 	"rest":  newBuiltin(builtinRest),
 	"push":  newBuiltin(builtinPush),
+	"puts":  newBuiltin(builtinPuts),
 }
 
 func newBuiltin(fn object.BuiltinFunction) *object.Builtin {
@@ -103,4 +107,12 @@ func builtinPush(args ...object.Object) object.Object {
 	newElements[length] = args[1]
 
 	return &object.Array{Elements: newElements}
+}
+
+func builtinPuts(args ...object.Object) object.Object {
+	for _, arg := range args {
+		fmt.Println(arg.Inspect())
+	}
+
+	return NULL
 }
