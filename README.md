@@ -7,7 +7,6 @@ Repo tracking my progress working through the amazing book [Writing an Interpret
 ### Start REPL
 
 ```bash
-go mod tidy
 go run .
 ```
 
