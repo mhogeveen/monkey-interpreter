@@ -50,6 +50,10 @@ func TestErrorHandling(t *testing.T) {
 			"foobar",
 			"identifier not found: foobar",
 		},
+		{
+			`"Hello" - "World"`,
+			"unkown operator: STRING - STRING",
+		},
 	}
 
 	for _, tt := range tests {
