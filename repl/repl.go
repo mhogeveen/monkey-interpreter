@@ -17,7 +17,7 @@ func Start(in io.Reader, out io.Writer) {
 	env := object.NewEnvironment()
 
 	for {
-		fmt.Fprintf(out, colorize.Colorize(">> ", "green"))
+		fmt.Fprintf(out, colorize.Colorize(" ", "green"))
 		scanned := scanner.Scan()
 		if !scanned {
 			return
